@@ -1,0 +1,74 @@
+# AI-Powered Sales Intelligence & Alerting System
+
+🚀 Real-time AI system that converts unstructured field sales messages into structured insights and triggers automated alerts based on severity.
+
+---
+
+## 🧠 System Flow
+
+Telegram → OpenAI → Google Sheets → IF Logic → Alerts
+
+---
+
+## ⚙️ Tech Stack
+
+* n8n (Workflow Automation)
+* OpenAI (LLM for JSON extraction)
+* Telegram Bot API (Input + Response)
+* Google Sheets (Data Storage)
+* Gmail API (High-priority Alerts)
+
+---
+
+## 🔥 Features
+
+* Converts unstructured sales messages into structured JSON
+* Extracts key fields: OUTLET, LOCATION, ISSUE, COMPETITOR, SEVERITY
+* Stores data in Google Sheets for tracking
+* Classifies issues into HIGH / MEDIUM / LOW
+* Triggers real-time alerts via Email and Telegram
+
+---
+
+## 📸 Demo
+
+### Telegram Input
+
+![Telegram](screenshots/telegram.png)
+
+### Google Sheets Log
+
+![Sheets](screenshots/sheets.png)
+
+### Email Alert
+
+![Email](screenshots/email.png)
+
+### Workflow (n8n)
+
+![Workflow](screenshots/workflow.png)
+
+---
+
+## 🎯 Use Case
+
+Field sales teams can report issues such as competitor discounts or stock shortages in real time.
+The system ensures critical issues are escalated instantly while maintaining a structured log for analysis.
+
+---
+
+## 🧠 Key Highlights
+
+* End-to-end GenAI pipeline
+* Event-driven workflow using n8n
+* Structured output using prompt engineering
+* Multi-channel alert system
+
+---
+
+## 🚀 Future Improvements
+
+* Dashboard visualization (Power BI / Streamlit)
+* CRM integration (Salesforce / HubSpot)
+* Predictive issue detection
+* Multi-language support
